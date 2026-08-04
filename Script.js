@@ -72,31 +72,42 @@
 // }
 
  //metodo de preparacion francesa moka o v60
- //ratio francesa =1/15
- //ratio moka =1/14
- //ratio v60 =1/16
+//  //ratio francesa =1/15
+//  //ratio moka =1/14
+//  //ratio v60 =1/16
 
 
- let metodo = prompt("Elije un metodo: francesa , moka o v60")
- let grcafe = prompt("¿Cuantos gramos de cafe utilizaras?")
+//  let metodo = prompt("Elije un metodo: francesa , moka o v60")
+//  let grcafe = prompt("¿Cuantos gramos de cafe utilizaras?")
  
- if( metodo === "francesa"){
+//  if( metodo === "francesa"){
 
-  let usa = grcafe * 15
-  console.log(`Debes usar ${usa} ml de agua`)
+//   let usa = grcafe * 15
+//   console.log(`Debes usar ${usa} ml de agua`)
 
- }
+//  }
 
- if( metodo === "moka"){
+//  if( metodo === "moka"){
 
-  let usa = grcafe * 14
-  console.log(`Debes usar ${usa} ml de agua`)
+//   let usa = grcafe * 14
+//   console.log(`Debes usar ${usa} ml de agua`)
 
- }
+//  }
 
- if( metodo === "v60"){
+//  if( metodo === "v60"){
 
-  let usa = grcafe * 16
-  console.log(`Debes usar" ${usa} ml de agua`)
+//   let usa = grcafe * 16
+//   console.log(`Debes usar" ${usa} ml de agua`)
 
- }
+//  }
+
+let año = prompt("Digina un año en numeros")
+if((año % 400 === 0) || (año % 4 === 0 && año % 100 !== 0)){
+
+    console.log(`El año ${año} es bisiesto`)
+
+}else {
+
+    console.log(`El año ${año} no es bisiesto`)
+
+}
