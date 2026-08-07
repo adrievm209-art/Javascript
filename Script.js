@@ -159,21 +159,53 @@
 
 
 
-for (let i = 1; i <= 50; i++) {
+// for (let i = 1; i <= 50; i++) {
   
-    if(i % 3 === 0){
+//     if(i % 3 === 0 && i % 5 === 0){
 
-        console.log(`FIZZBOZZ ${i}`)
+//         console.log(`FIZZBOZZ ${i}`)
 
-    }else if(i % 5 === 0){
+//     }else if(i % 3 === 0 ){
 
-         console.log(`BOZZ ${i}`)
+         
+//         console.log(`FIZZ ${i}`)
+//     }else if(i % 5 === 0 ){
 
-    }else if(i % 3 && i % 5){
+//         console.log(`BOZZ ${i}`)
 
-        console.log(`FIZZ ${i}`)
+//     }
 
-    }
+// }
+
+// let frutas = ['fresa', 'mora', 'kiwi'] ;
+// let fruta = prompt('Ingresa un fruta')
+// frutas.push(fruta);
+// console.log(frutas);
+
+// for (let i = 1; i<= 10; i++) {
+
+//     let total = i;
+//     console.log(total)
+
+// }
+
+// let carros = ["BMW", "Mercedes Benz", "Audi", "Mazda"]
+
+let numAzar = Math.floor((Math.random() * 10)+1)
+for (let i = 1; i <= 5 ; i++) {
+
+    let num = Number(prompt("Ingrese un numero del 1 al 10"))
+
+    if (numAzar == num) {
+        console.log("ganaste")
+        break
+    }else if(num > numAzar){
+
+        console.log("Prueba con un numero menor")
+
+    }else if(num < numAzar){
+        console.log("Prueba con un numero mayor")
+    }else
+        console.log("Perdiste")
 
 }
-
