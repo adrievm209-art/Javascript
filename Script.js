@@ -256,7 +256,10 @@
 
 // }
 
-const colores = ["marron", "celeste", "verde", "rosa", "morado", "blanco", "negro", "azul"]
+// const colores = ["marron", "celeste", "verde", "rosa", "morado", "blanco", "negro", "azul"]
 
-console.log(colores[0])
-console.log(colores[colores.length - 1])
+// console.log(colores[0])
+// console.log(colores[colores.length - 1])
+
+const numeros = [2, 15, 67, 99, 3, 7]
+console.log (`el array tiene ${numeros.length} elementos`)
