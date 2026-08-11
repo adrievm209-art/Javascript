@@ -257,9 +257,15 @@
 // }
 
 // const colores = ["marron", "celeste", "verde", "rosa", "morado", "blanco", "negro", "azul"]
-
 // console.log(colores[0])
 // console.log(colores[colores.length - 1])
 
-const numeros = [2, 15, 67, 99, 3, 7]
-console.log (`el array tiene ${numeros.length} elementos`)
+// const numeros = [2, 15, 67, 99, 3, 7]
+// console.log (`el array tiene ${numeros.length} elementos`)
+
+for (let i = 1; i <= 20; i++) { 
+    if(i % 2 === 0){
+        console.log(i)
+    }  
+}
+
