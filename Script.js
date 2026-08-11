@@ -267,11 +267,22 @@
 //         console.log(i)
 // }
 
-const numeros = [12, 67, 280, 99, 360]
-let numeroMayor = 0
-for (let i = 0; i < numeros.length; i++){
-    if(numeros[i] > numeroMayor){
-        numeroMayor = numeros[i]
-    }
+// const numeros = [12, 67, 280, 99, 360,]
+// let numeroMayor = 0
+// for (let i = 0; i < numeros.length; i++){
+//     if(numeros[i] > numeroMayor){
+//         numeroMayor = numeros[i]
+//     }
+// }
+// console.log(`El numero mayor es ${numeroMayor}`)
+
+const productos = [
+    { nombre: "Iphone", Precio: 3_000_000 },
+    { nombre: "Funda", Precio: 60_000 },
+    { nombre: "Vidrio", Precio: 20_000 }
+]
+let precioTotal = 0
+for (let i = 0; i < productos.length; i++) {
+    precioTotal = precioTotal + productos[i].Precio
 }
-console.log(`El numero mayor es ${numeroMayor}`)
+console.log(`El precio total es : ${precioTotal}`)
