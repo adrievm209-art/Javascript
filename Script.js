@@ -276,13 +276,27 @@
 // }
 // console.log(`El numero mayor es ${numeroMayor}`)
 
-const productos = [
-    { nombre: "Iphone", Precio: 3_000_000 },
-    { nombre: "Funda", Precio: 60_000 },
-    { nombre: "Vidrio", Precio: 20_000 }
+// const productos = [
+//     { nombre: "Iphone", Precio: 3_000_000 },
+//     { nombre: "Funda", Precio: 60_000 },
+//     { nombre: "Vidrio", Precio: 20_000 }
+// ]
+// let precioTotal = 0
+// for (let i = 0; i < productos.length; i++) {
+//     precioTotal = precioTotal + productos[i].Precio
+// }
+// console.log(`El precio total es : ${precioTotal}`)
+
+const estudiantes = [
+    { nombre: "Sophia", nota: 5.0 },
+    { nombre: "Thomas", nota: 3.5 },
+    { nombre: "Shaiel", nota: 4.0 },
+    { nombre: "Harold", nota: 2.1 }
 ]
-let precioTotal = 0
-for (let i = 0; i < productos.length; i++) {
-    precioTotal = precioTotal + productos[i].Precio
+for (let i = 0; i < estudiantes.length; i++) {
+    if(estudiantes[i].nota >= 3.0){
+        console.log(`${estudiantes[i].nombre} - ${estudiantes[i].nota}`)
+    }
 }
-console.log(`El precio total es : ${precioTotal}`)
+
+
