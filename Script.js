@@ -189,23 +189,74 @@
 
 // }
 
-// let carros = ["BMW", "Mercedes Benz", "Audi", "Mazda"]
+// // let carros = ["BMW", "Mercedes Benz", "Audi", "Mazda"]
 
-let numAzar = Math.floor((Math.random() * 10)+1)
-for (let i = 1; i <= 5 ; i++) {
+// let numAzar = Math.floor((Math.random() * 10)+1)
+// for (let i = 1; i <= 5 ; i++) {
 
-    let num = Number(prompt("Ingrese un numero del 1 al 10"))
+//     let num = Number(prompt("Ingrese un numero del 1 al 10"))
 
-    if (numAzar == num) {
-        console.log("ganaste")
-        break
-    }else if(num > numAzar){
+//     if (numAzar == num) {
+//         console.log("ganaste")
+//         break
+//     }else if(num > numAzar){
 
-        console.log("Prueba con un numero menor")
+//         console.log("Prueba con un numero menor")
 
-    }else if(num < numAzar){
-        console.log("Prueba con un numero mayor")
-    }else
-        console.log("Perdiste")
+//     }else if(num < numAzar){
+//         console.log("Prueba con un numero mayor")
+//     }else
+//          console.log("Perdiste")
 
-}
+// }
+
+
+
+// let estudiantes = [
+
+
+//     {
+
+//         nombre: "shakira",
+//         nota: 3
+
+//     },
+//      {
+
+//         nombre: "billie",
+//         nota: 5
+
+//     },
+//      {
+
+//         nombre: "theweeknd",
+//         nota: 4
+
+//     },
+//      {
+
+//         nombre: "josean",
+//         nota: 5
+
+//     }
+
+    
+// ]
+
+
+// for (let i = 0; i < estudiantes.length; i++) {
+
+//     console.log(`el estudiante ${estudiantes[i].nombre} y su nota es ${estudiantes[i].nota}`)
+
+//     if (estudiantes[i].nota >= 3) {
+//         document.write(`${estudiantes[i].nombre} aprobó la materia`);
+//     } else {
+//         document.write(`${estudiantes[i].nombre} no aprobó la materia`);
+//     }
+
+// }
+
+const colores = ["marron", "celeste", "verde", "rosa", "morado", "blanco", "negro", "azul"]
+
+console.log(colores[0])
+console.log(colores[colores.length - 1])
