@@ -263,7 +263,15 @@
 // const numeros = [2, 15, 67, 99, 3, 7]
 // console.log (`el array tiene ${numeros.length} elementos`)
 
-for (let i = 2; i <= 20; i+= 2) {  
-        console.log(i)
-}
+// for (let i = 2; i <= 20; i+= 2) {  
+//         console.log(i)
+// }
 
+const numeros = [12, 67, 280, 99, 360]
+let numeroMayor = 0
+for (let i = 0; i < numeros.length; i++){
+    if(numeros[i] > numeroMayor){
+        numeroMayor = numeros[i]
+    }
+}
+console.log(`El numero mayor es ${numeroMayor}`)
