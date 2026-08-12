@@ -299,19 +299,54 @@
 //     }
 // }
 
-const ejercicios = [
-    { nombre: "Sentadilla", peso: 80 },
-    { nombre: "Press Banca", peso: 60 },
-    { nombre: "Peso Muerto", peso: 120 },
-    { nombre: "Dominadas Lastradas", peso: 25 }
+// const ejercicios = [
+//     { nombre: "Sentadilla", peso: 80 },
+//     { nombre: "Press Banca", peso: 60 },
+//     { nombre: "Peso Muerto", peso: 120 },
+//     { nombre: "Dominadas Lastradas", peso: 25 }
+// ]
+// let pesoMaximo = 0
+// let ejercicioMasPesado
+// for (let i = 0; i < ejercicios.length; i++) {
+//     if(ejercicios[i].peso > pesoMaximo){
+//         pesoMaximo = ejercicios[i].peso
+//         ejercicioMasPesado = ejercicios[i].nombre
+//     }
+// }
+// console.log(`El esjercicio que mas pesa es ${ejercicioMasPesado} con ${pesoMaximo} KG `)
+
+const boxeadores = [
+    { nombre: "Floyd Mayweather", victorias: 50, derrotas: 0, kos: 27 },
+    { nombre: "Mike Tyson", victorias: 50, derrotas: 6, kos: 44 },
+    { nombre: "Muhammad Ali", victorias: 56, derrotas: 5, kos: 37 },
+    { nombre: "Gennadiy Golovkin", victorias: 42, derrotas: 2, kos: 37 }
 ]
-let pesoMaximo = 0
-let ejercicioMasPesado
-for (let i = 0; i < ejercicios.length; i++) {
-    if(ejercicios[i].peso > pesoMaximo){
-        pesoMaximo = ejercicios[i].peso
-        ejercicioMasPesado = ejercicios[i].nombre
+let masVictorias = 0
+let boxeadorMasVictorias = ""
+
+let masKos = 0
+let boxeadorMasKos = ""
+
+console.log("=== ESTADISTICAS DE BOXEADORES ===")
+for (let i = 0; i < boxeadores.length; i++) {
+    let peleasTotales = boxeadores[i].victorias + boxeadores[i].derrotas
+    let porcentajeVictorias = (boxeadores[i].victorias / peleasTotales) * 100
+    let porcentajeKos = (boxeadores[i].kos / peleasTotales) * 100
+    console.log(`\n${boxeadores[i].nombre}`)
+    console.log(`Peleas: ${peleasTotales} (${boxeadores[i].victorias}V - ${boxeadores[i].derrotas}D)`)
+    console.log(`% de victorias: ${porcentajeVictorias.toFixed(1)}%`)
+    console.log(`% de kos ${porcentajeKos.toFixed(1)}%`)
+
+    if(boxeadores[i].victorias > masVictorias){
+        masVictorias = boxeadores[i].victorias
+        boxeadorMasVictorias = boxeadores[i].nombre
+    }
+    if(boxeadores[i].kos > masKos){
+        masKos = boxeadores[i].kos
+        boxeadorMasKos = boxeadores[i].nombre
     }
 }
-console.log(`El esjercicio que mas pesa es ${ejercicioMasPesado} con ${pesoMaximo} KG `)
 
+console.log("\n---RESUMEN---")
+console.log(`Boxeador con mas victorias: ${boxeadorMasVictorias} (${masVictorias} victorias)`)
+console.log(`Boxeador con mas Kos: ${boxeadorMasKos} (${masKos} Kos)`)
