@@ -287,16 +287,31 @@
 // }
 // console.log(`El precio total es : ${precioTotal}`)
 
-const estudiantes = [
-    { nombre: "Sophia", nota: 5.0 },
-    { nombre: "Thomas", nota: 3.5 },
-    { nombre: "Shaiel", nota: 4.0 },
-    { nombre: "Harold", nota: 2.1 }
+// const estudiantes = [
+//     { nombre: "", nota: 5.0 },
+//     { nombre: "Thomas", nota: 3.5 },
+//     { nombre: "Shaiel", nota: 4.0 },
+//     { nombre: "Harold", nota: 2.1 }
+// ]
+// for (let i = 0; i < estudiantes.length; i++) {
+//     if(estudiantes[i].nota >= 3.0){
+//         console.log(`${estudiantes[i].nombre} - ${estudiantes[i].nota}`)
+//     }
+// }
+
+const ejercicios = [
+    { nombre: "Sentadilla", peso: 80 },
+    { nombre: "Press Banca", peso: 60 },
+    { nombre: "Peso Muerto", peso: 120 },
+    { nombre: "Dominadas Lastradas", peso: 25 }
 ]
-for (let i = 0; i < estudiantes.length; i++) {
-    if(estudiantes[i].nota >= 3.0){
-        console.log(`${estudiantes[i].nombre} - ${estudiantes[i].nota}`)
+let pesoMaximo = 0
+let ejercicioMasPesado
+for (let i = 0; i < ejercicios.length; i++) {
+    if(ejercicios[i].peso > pesoMaximo){
+        pesoMaximo = ejercicios[i].peso
+        ejercicioMasPesado = ejercicios[i].nombre
     }
 }
-
+console.log(`El esjercicio que mas pesa es ${ejercicioMasPesado} con ${pesoMaximo} KG `)
 
