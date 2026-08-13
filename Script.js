@@ -315,38 +315,76 @@
 // }
 // console.log(`El esjercicio que mas pesa es ${ejercicioMasPesado} con ${pesoMaximo} KG `)
 
-const boxeadores = [
-    { nombre: "Floyd Mayweather", victorias: 50, derrotas: 0, kos: 27 },
-    { nombre: "Mike Tyson", victorias: 50, derrotas: 6, kos: 44 },
-    { nombre: "Muhammad Ali", victorias: 56, derrotas: 5, kos: 37 },
-    { nombre: "Gennadiy Golovkin", victorias: 42, derrotas: 2, kos: 37 }
-]
-let masVictorias = 0
-let boxeadorMasVictorias = ""
+// const boxeadores = [
+//     { nombre: "Floyd Mayweather", victorias: 50, derrotas: 0, kos: 27 },
+//     { nombre: "Mike Tyson", victorias: 50, derrotas: 6, kos: 44 },
+//     { nombre: "Muhammad Ali", victorias: 56, derrotas: 5, kos: 37 },
+//     { nombre: "Gennadiy Golovkin", victorias: 42, derrotas: 2, kos: 37 }
+// ]
+// let masVictorias = 0
+// let boxeadorMasVictorias = ""
 
-let masKos = 0
-let boxeadorMasKos = ""
+// let masKos = 0
+// let boxeadorMasKos = ""
 
-console.log("=== ESTADISTICAS DE BOXEADORES ===")
-for (let i = 0; i < boxeadores.length; i++) {
-    let peleasTotales = boxeadores[i].victorias + boxeadores[i].derrotas
-    let porcentajeVictorias = (boxeadores[i].victorias / peleasTotales) * 100
-    let porcentajeKos = (boxeadores[i].kos / peleasTotales) * 100
-    console.log(`\n${boxeadores[i].nombre}`)
-    console.log(`Peleas: ${peleasTotales} (${boxeadores[i].victorias}V - ${boxeadores[i].derrotas}D)`)
-    console.log(`% de victorias: ${porcentajeVictorias.toFixed(1)}%`)
-    console.log(`% de kos ${porcentajeKos.toFixed(1)}%`)
+// console.log("=== ESTADISTICAS DE BOXEADORES ===")
+// for (let i = 0; i < boxeadores.length; i++) {
+//     let peleasTotales = boxeadores[i].victorias + boxeadores[i].derrotas
+//     let porcentajeVictorias = (boxeadores[i].victorias / peleasTotales) * 100
+//     let porcentajeKos = (boxeadores[i].kos / peleasTotales) * 100
+//     console.log(`\n${boxeadores[i].nombre}`)
+//     console.log(`Peleas: ${peleasTotales} (${boxeadores[i].victorias}V - ${boxeadores[i].derrotas}D)`)
+//     console.log(`% de victorias: ${porcentajeVictorias.toFixed(1)}%`)
+//     console.log(`% de kos ${porcentajeKos.toFixed(1)}%`)
 
-    if(boxeadores[i].victorias > masVictorias){
-        masVictorias = boxeadores[i].victorias
-        boxeadorMasVictorias = boxeadores[i].nombre
-    }
-    if(boxeadores[i].kos > masKos){
-        masKos = boxeadores[i].kos
-        boxeadorMasKos = boxeadores[i].nombre
-    }
+//     if(boxeadores[i].victorias > masVictorias){
+//         masVictorias = boxeadores[i].victorias
+//         boxeadorMasVictorias = boxeadores[i].nombre
+//     }
+//     if(boxeadores[i].kos > masKos){
+//         masKos = boxeadores[i].kos
+//         boxeadorMasKos = boxeadores[i].nombre
+//     }
+// }
+
+// console.log("\n---RESUMEN---")
+// console.log(`Boxeador con mas victorias: ${boxeadorMasVictorias} (${masVictorias} victorias)`)
+// console.log(`Boxeador con mas Kos: ${boxeadorMasKos} (${masKos} Kos)`)
+
+function sumar(a,b){
+    console.log(a+b)
 }
 
-console.log("\n---RESUMEN---")
-console.log(`Boxeador con mas victorias: ${boxeadorMasVictorias} (${masVictorias} victorias)`)
-console.log(`Boxeador con mas Kos: ${boxeadorMasKos} (${masKos} Kos)`)
+function restar(a,b){
+    console.log(a-b)
+}
+
+function mult(a,b){
+    console.log(a*b)
+}
+
+function dividir(a,b){
+    console.log(a/b)
+}
+
+let operacion = prompt (`  
+    Que operacion quieres realiar?
+    1)sumar
+    2)restar
+    3)multiplicar
+    4)dividir
+    `)
+let n1 = Number(prompt(`Ingrese el primer digito`))
+let n2 = Number(prompt(`Ingrese el Segundo digito`))
+
+if(operacion === "sumar"){
+    sumar(n1,n2)
+}else if(operacion === "restar"){
+    restar(n1,n2)
+}else if(operacion === "multiplicar"){
+    mult(n1,n2)
+}else if(operacion === "dividir"){
+    dividir(n1,n2)
+}else{
+    console.log("ESCRIBE BIEN !")
+}
